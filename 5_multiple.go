@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package euler
 
 func smallest_multiple() int {
 	for i := 20; ; i += 20 {
@@ -13,8 +11,4 @@ func smallest_multiple() int {
 			}
 		}
 	}
-}
-
-func main() {
-	fmt.Println(smallest_multiple())
 }

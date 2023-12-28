@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package euler
 
 var history map[int]int
 
@@ -17,7 +15,7 @@ func fibonacci(n int) int {
 	return history[n]
 }
 
-func main() {
+func SumEvenTerms() int {
 	history = make(map[int]int)
 	i := 1
 	var fib, sum int
@@ -31,5 +29,5 @@ func main() {
 		}
 		i = i + 1
 	}
-	fmt.Println(sum)
+	return sum
 }

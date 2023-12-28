@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package euler
 
 type primes struct {
 	value, position int
@@ -31,12 +29,12 @@ func (p *primes) NextPrime() {
 	}
 }
 
-func main() {
+func Prime10001() int {
 	p := NewPrimes()
 
 	for p.position < 10001 {
 		p.NextPrime()
 	}
 
-	fmt.Println(p.value)
+	return p.value
 }

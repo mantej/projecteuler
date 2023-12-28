@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package euler
 
 func sumOfSquares(n int) int {
 	var sum int
@@ -16,8 +14,4 @@ func squareOfSums(n int) int {
 		sum += i
 	}
 	return sum * sum
-}
-
-func main() {
-	fmt.Println(squareOfSums(100) - sumOfSquares(100))
 }

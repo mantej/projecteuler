@@ -1,7 +1,6 @@
-package main
+package euler
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -26,9 +25,4 @@ func GetPrimeFactors(n int) []int {
 		}
 	}
 	return primes
-}
-
-func main() {
-	primes := GetPrimeFactors(600851475143)
-	fmt.Println(primes[len(primes)-1])
 }

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package euler
 
 func multiples(n int) int {
 	var total int
@@ -12,8 +10,4 @@ func multiples(n int) int {
 	}
 
 	return total
-}
-
-func main() {
-	fmt.Println(multiples(1000))
 }

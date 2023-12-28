@@ -1,7 +1,6 @@
-package main
+package euler
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -24,7 +23,7 @@ func isPalindrome(s string) bool {
 	return true
 }
 
-func main() {
+func LargestPalindrome() int {
 	var isPal bool
 	largestPalindrome := 0
 
@@ -41,5 +40,5 @@ func main() {
 		}
 	}
 
-	fmt.Println(largestPalindrome)
+	return largestPalindrome
 }
